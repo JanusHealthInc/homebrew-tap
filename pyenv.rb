@@ -1,4 +1,4 @@
-class Pyenv < Formula
+class PyenvAT12 < Formula
   desc "Python version management"
   homepage "https://github.com/pyenv/pyenv"
   url "https://github.com/pyenv/pyenv/archive/1.2.27.tar.gz"
