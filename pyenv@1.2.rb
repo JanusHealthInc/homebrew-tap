@@ -4,13 +4,6 @@ class PyenvAT12 < Formula
   url "https://github.com/pyenv/pyenv/archive/1.2.27.tar.gz"
   sha256 "7e061b98f66ed60070a3920351bfc991d132f28ed4c7e037b8e726f825261586"
   license "MIT"
-  version_scheme 1
-  head "https://github.com/pyenv/pyenv.git"
-
-  livecheck do
-    url :stable
-    strategy :github_latest
-  end
 
   bottle do
     sha256 cellar: :any, arm64_big_sur: "5aacdc10bc8751051d6635c8fc45decb36c6e9e1f8e0660cb921b3b80736321b"
@@ -18,6 +11,8 @@ class PyenvAT12 < Formula
     sha256 cellar: :any, catalina:      "7fa8220ac770c8b2893adb7c19400b380928065fdd3d82b27a5231327b77e78e"
     sha256 cellar: :any, mojave:        "f0a10877d4f8fff9aeb8aaef410f534ff7279c62fc9e337c19136350733c9ee9"
   end
+
+  keg_only :versioned_formula
 
   depends_on "autoconf"
   depends_on "openssl@1.1"
