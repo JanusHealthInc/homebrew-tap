@@ -8,7 +8,7 @@ class PyenvVirtualenvwrapper < Formula
 
   bottle :unneeded
 
-  depends_on "pyenv"
+  depends_on "janushealthinc/tap/pyenv"
 
   def install
     ENV["PREFIX"] = prefix
